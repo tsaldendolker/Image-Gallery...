@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle">Dark Mode</button>
+
+    <!-- Search Bar -->
+    <input type="text" id="search-box" placeholder="Search images...">
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+        <button class="filter-btn" data-category="food">Food</button>
+        <button class="filter-btn" data-category="city">City</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <img src="image/image1.jpg" data-category="nature" loading="lazy" alt="Image 1">
+        <img src="image/image2.jpg" data-category="nature" loading="lazy" alt="Image 2">
+        <img src="image/image3.jpg" data-category="nature" loading="lazy" alt="Image 3">
+        <img src="image/image4.jpg" data-category="nature" loading="lazy" alt="Image 4">
+        <img src="image/image5.jpg" data-category="food" loading="lazy" alt="Image 5">
+        <img src="image/image6.jpg" data-category="food" loading="lazy" alt="Image 6">
+        <img src="image/image7.jpg" data-category="food" loading="lazy" alt="Image 7">
+        <img src="image/image8.jpg" data-category="city" loading="lazy" alt="Image 8">
+        <img src="image/image9.jpg" data-category="city" loading="lazy" alt="Image 9">
+        <img src="image/image10.jpg" data-category="city" loading="lazy" alt="Image 10">
+        <img src="image/image11.jpg" data-category="nature" loading="lazy" alt="Image 11">
+        <img src="image/image12.jpg" data-category="nature" loading="lazy" alt="Image 12">
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+</body>
+</html>
